@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ccb_comm_bg0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.mj.circlemenu.menus.CircleMenuLayout
+                android:id="@+id/id_menulayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/circle_bg3"
+                android:padding="100dp">
+
+                <RelativeLayout
+                    android:id="@id/id_circle_menu_item_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.lzy.widget.CircleImageView
+                        android:id="@+id/img_header"
+                        android:layout_width="104.0dip"
+                        android:layout_height="104.0dip"
+                        android:layout_centerInParent="true"
+                        app:civ_BorderWidth="0dp" />
+
+                    <ImageView
+                        android:layout_width="116.0dip"
+                        android:layout_height="116.0dip"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/turnplate_mask_unlogin_normal" />
+                </RelativeLayout>
+            </com.mj.circlemenu.menus.CircleMenuLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
